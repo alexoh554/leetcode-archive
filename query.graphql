@@ -1,0 +1,12 @@
+query GetUserInfo($username: String!) {
+  recentSubmissionList(username: $username) {
+    id
+    title
+    titleSlug
+    timestamp
+    statusDisplay
+    lang
+    url
+    __typename
+  }
+}
